@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Chessgames Mobile Chess | Play anyone across the world with your Android or iOS phone</title>
+
+		<meta charset="utf-8">
+
+		<!-- Ensures proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Bootstrap latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<!-- Include main.js file -->
+		<script src="script/main.js"></script>
+		
+		<!-- Stylesheets -->
+		<link rel = "stylesheet" type = "text/css" href = "/src/css/collage.css">
+		<link rel = "stylesheet" type = "text/css" href = "/src/css/footer.css">
+		<link rel = "stylesheet" type = "text/css" href = "/src/css/social_icons.css">
+		<link rel = "stylesheet" type = "text/css" href = "/src/css/typing.css">
+		<link rel = "stylesheet" type = "text/css" href = "/src/css/video.css">
+		
+		<!-- Scripts -->
+		<script src="src/js/typing.js"></script> 
+
+		<style>
+			#home 		{ color: #FFF; background-color: #FFF; }
+			#about 		{ padding-top: 50px; height: 1000px; color: #FFF; background-color: #1E88E5; }
+			#team 		{ padding-top: 50px; height: 1000px; color: #FFF; background-color: #673ab7; }
+			#docs 		{ padding-top: 50px; height: 1000px; color: #FFF; background-color: #ff9800; }
+			#download 	{ padding-top: 50px; height: 1000px; color: #FFF; background-color: #00bcd4; }
+		</style>
+	</head>
+
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<ul class="nav navbar-nav">
+				<li><a href="#about">About</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#docs">Docs</a></li>
+				<li><a href="#download">Download</a></li>
+			</ul>
+		</nav>
+		<div id="home">
+			<div class="video_contain">
+	  			<video autoplay loop muted class="bgvideo" id="bgvideo">
+	    			<source src="videos/whiteFinal2Compressed.mp4">
+	  			</video>
+			</div>
+		</div>
+
+		<div id="about">
+			<h1>About</h1>
+			<link href="http://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+			<p>You want to work on this app because...
+			  <span
+			     class="txt-rotate"
+			     data-period="2000"
+			     data-rotate='[ " releasing an app will look great on your resume.", " potential to make money.", " little-to-no learning curve (written with your bread and butter C++.)", " " ]'></span>
+			</p>
+			<ul>
+				<li> Android and iOS app for eigth largest chess website in the world (according to Alexa), chessgames.com. </li>
+				<li> Allows anyone to play chess against anyone in the world. </li>
+				<li> Written entirely from scratch using C++. </li>
+				<li> Completely free and open source. </li>
+				<li> Available in English, Spanish, Mandarin and Russian. </li>
+				<li> Will be released on Android and iOS app stores in April. </li>
+				<li> Written from September 29, 2014 - Present. </li>
+			</ul>
+			<div class="collage">
+	                    <!-- Top Set -->
+	                    <a href="#">
+	                        <img src="img/windows_server.jpeg" alt="Collage Photo">
+	                    </a>
+	                    <a href="#">
+	                        <img src="img/platforms.png" alt="Collage Photo">
+	                    </a>
+	                    <a href="#">
+	                        <img src="img/sql_server_logo.png" alt="Collage Photo">
+	                    </a>
+	                    <a href="#" height="25%" width="25%">
+	                        <img src="img/qt.png" alt="Collage Photo">
+	                    </a>
+	                    <a href="#">
+	                        <img src="img/git.jpg" alt="Collage Photo">
+	                    </a>
+	                </div>
+		</div>
+
+		<div id="team">
+			<h1>Team</h1>
+
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="img-circle" src="img/stu.png" style="width: 150px; height: 150px;" alt="Stu" />
+				</div>
+
+				<div class="col-xs-8">
+					<h2>Stu</h2>
+					<p>Some text here...</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="img-circle" src="img/jacob.png" style="width: 150px; height: 150px;" alt="Jacob" />
+				</div>
+
+				<div class="col-xs-8">
+					<h2>Jacob</h2>
+					<p>Some text here...</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="img-circle" src="img/lou.jpg" style="width: 150px; height: 150px;" alt="Lou" />
+				</div>
+
+				<div class="col-xs-8">
+					<h2>Lou</h2>
+					<p>Some text here...</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="img-circle" src="img/aaron.jpg" style="width: 150px; height: 150px;" alt="Aaron" />
+				</div>
+
+				<div class="col-xs-8">
+					<h2>Aaron</h2>
+					<p>Some text here...</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="docs">
+			<h1>Docs</h1>
+			<p>Scroll through our design docs...</p>
+			   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			      <li data-target="#myCarousel" data-slide-to="3"></li>
+			      <li data-target="#myCarousel" data-slide-to="4"></li>
+			      <li data-target="#myCarousel" data-slide-to="5"></li>
+			    </ol>
+			
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+			      <div class="item active">
+			        <img src="img/project_management.png" alt="Scrumwise">
+			      </div>
+			
+			      <div class="item">
+			        <img src="img/kanban.png" alt="Kanban" height = "80%" width = "80%" >
+			      </div>
+			    
+			      <div class="item">
+			        <img src="img/burndown_chart.png" alt="Burndown chart" height = "80%" width = "80%">
+			      </div>
+			
+			      <div class="item">
+			        <img src="img/MoveTransmissionUseCase.png" alt="Move Transmission Use Case" height = "70%" width = "70%">
+			      </div>
+			      
+			      <div class="item">
+			        <img src="img/login.png" alt="Login UML">
+			      </div>
+			      
+			      <div class="item">
+			        <img src="img/Pool Sequence Diagram.png" alt="Pool Use Case" height = "80%" width = "80%">
+			      </div>
+			    </div>
+			
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
+		        </div>
+
+		<div id="download">
+			<h1> Download</h1>
+			<p> Below are steps to running the app. If you are an experienced git user, just use git to clone the repository.  Otherwise, follow the
+			    Poor mans guide below. </p>
+			<br>
+				<p>Poor mans steps to running app</p>
+				<ol>
+					<li> Download and install Qt. (click icon directly below) </li>
+					<a href="http://www.qt.io/download-open-source/"><img src="img/qt.jpg" alt="Qt Logo" height="7%" width=7%"></a>
+					<li> Download and extract zip (click icon directly below). </li>
+					<a href="https://github.com/chessgames/play-zone/archive/master.zip"><img src="img/github_logo.png" alt="Github Logo"></a>
+					<li> Double-click CG_mobilechess.pro (located in your_install_path\play-zone\src\CG_mobileChess\CG_mobilechess.pro).</li>
+					<li> Press Ctrl + R (i.e. this builds and runs the program). </li>
+					<li> Register account or just login with default user. </li>
+				        <li> Login. </li>
+				        <li> Enter game queue (1-minute, 5-minute, 30-minute). </li>
+				        <li> Play chess. </li>
+				</ol>
+		</div>
+
+	</body>
+	
+	<footer id = "top_footer">
+	<!-- Chessgames.com social icons -->
+
+	<div class="social__container">   
+
+    		    <!-- social__item twitter -->
+    		    <div class="social__item">
+                    	<a target="_blank" href="https://twitter.com/chessgamescom" class="social__icon--twitter"><i class="icon--twitter"></i></a>
+		    </div>
+    		    <!-- /social__item twitter -->
+  
+		    <!-- social__item facebook -->
+		    <div class="social__item">
+		            <a target="_blank" href="https://www.facebook.com/chessgamescom" class="social__icon--facebook"><i class="icon--facebook"></i></a>
+		    </div>
+		    <!-- /social__item facebook -->
+		  
+		    <!-- social__item instagram -->
+		    <div class="social__item">
+		            <a target="_blank" href="https://instagram.com/explore/tags/chess24/" class="social__icon--instagram"><i class="icon--instagram"></i></a>
+		    </div>
+		    <!-- /social__item instagram -->
+		 
+		    <!-- social__item github -->
+		    <div class="social__item">
+		            <a target="_blank" href="http://github.com/chessgames/play-zone" class="social__icon--github"><i class="icon--github"></i></a>
+		    </div>
+		    <!-- /social__item github -->
+		    
+		    <!-- Copyright notice -->
+		    <p>&copy; Chessgames.com, LLC 2015</p>
+</div>
+	</footer>
+</html>
