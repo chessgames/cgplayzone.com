@@ -10,6 +10,11 @@ body{
 	-o-background-size:cover;
 	padding:40px 0px 100px 0px;
 }
+
+@font-face{
+	font-family:'OdinRounded';
+	src:url('../fonts/Frank Hemmekam - Odin Rounded/Packages/Odin Rounded/Regular/OdinRounded.otf') format('opentype');
+}
 .logo{
 	float:left;
 }
@@ -32,7 +37,7 @@ body{
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	font-weight: 400;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 }
 #nav .current a {
     color:#fb326f;
@@ -128,7 +133,7 @@ body{
 }
 .header-matter h1{
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	color: #fff;
 	font-size:80px;
 	padding:0px 0px 50px 0px;
@@ -170,7 +175,7 @@ a#v-exchange {
 .about-para h3{
 	color:#fff;
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	font-size: 45px;
 	padding:0px 0px 20px 0px;
 }
@@ -190,7 +195,7 @@ a#v-exchange {
 .about-row-column h3 a{
 	color: #fff;
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	font-size:26px;
 	padding:10px 0px;
 	text-decoration:none;
@@ -229,15 +234,15 @@ a#v-exchange {
 }
 /*-- About us part ends Here --*/
 /*-- Portfolio Starts Here --*/
-.portfolio{
+.team{
 	text-align:center;
 }
-.portfolio-top {
+.team-top {
 	text-align: center;
 }
 .portfolio-top h3 {
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	font-size:45px;
 	padding: 40px 0px;
 }
@@ -328,6 +333,10 @@ ul#filters {
 	background:#fff;
 	padding:0 0 9% 0;
 }
+.download{
+	background:#663333;
+	padding:0 0 9% 0;
+}
 .col_1_of_4:first-child {
 	margin-left: 0;
 }
@@ -400,7 +409,7 @@ ul#filters {
 		cursor: pointer;
 		font-size: 28px;
 		font-weight: 400;
-		font-family: 'Droid Sans', sans-serif;
+		font-family: 'OdinRounded', sans-serif;
 	}
 	#filters li span.active {
 		background:#0FCF8C;
@@ -488,20 +497,62 @@ ul#filters {
   width: 0;
   height: 0;
 }
-/*-- Portfolio Ends Here --*/
-/*-- Our Team Starts Here --*/
-.ourteam {
-	background:#2980b9;
-	padding:40px 0px;
-	margin-top:60px;
+.download-row{
+	text-align: center;
 }
+.download-row h3{
+	color:#fff;
+	font-weight: 700;
+	font-family: 'OdinRounded', sans-serif;
+	font-size: 45px;
+	padding:0px 0px 20px 0px;
+}
+	
+.download-row-column img{
+	background:#ffffff;
+	border-radius:130px;
+	-webkit-border-radius: 130px;
+	-moz-border-radius:130px;
+	-o-border-radius: 130pxx;
+	padding:5px 0px;
+}
+.download-row-column h4 a{
+	color:#fff;
+	font-weight: 700;
+	font-family: 'OdinRounded', sans-serif;
+	font-size: 26px;
+	text-decoration:none;
+}
+.download-row-column h4 a:hover{
+	color:#2ecc71;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.download-row-column{
+	padding:0px 137px;
+	text-align: center;
+}	
+.download-row-column h4 {
+	margin: 40px 0px 20px 0px;
+}
+.download-row-column p{
+	color:rgba(255, 255, 255, 0.92);
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-size:18px;
+	line-height:30px;
+	padding:0px 0px 20px 0px;
+}
+/**************/
 .team-row{
 	text-align: center;
 }
 .team-row h3{
 	color:#fff;
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	font-size: 45px;
 	padding:0px 0px 20px 0px;
 }
@@ -517,7 +568,7 @@ ul#filters {
 .team-row-column h4 a{
 	color:#fff;
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	font-size: 26px;
 	text-decoration:none;
 }
@@ -581,28 +632,28 @@ ul.social li i.ist:hover{
 }
 	 
 /*-- Our Team Ends Here --*/
-/*-- Contact starts Here --*/
-.contact-row{
+/*-- comments starts Here --*/
+.comments-row{
 	padding:40px 0px;
 	text-align:center;
 }
-.contact-row h3{
+.comments-row h3{
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	font-size: 45px;
 	color: #2c3e50;
 	padding:40px 0px;
 }
-.contact-row p{
+.comments-row p{
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	font-size: 26px;
 	color: #2c3e50;
 }
-.contact-row-column{
+.comments-row-column{
 	text-align:left:
 }
-.contact-row-column input[type="text"]{
+.comments-row-column input[type="text"]{
 	border:0px;
 	border-bottom-width:3px;
 	border-style:solid;
@@ -636,11 +687,11 @@ ul.social li i.ist:hover{
 	font-family: 'Droid Serif', serif;
 	font-weight: 400;	
 }
-.contact_btn{
+.comments_btn{
 	text-align:left;
 	padding:0px 10px;
 }	
-.contact_btn input[type="submit"]{
+.comments_btn input[type="submit"]{
 	border:0px;
 	background:#2ecc71;
 	padding:10px 20px;
@@ -652,7 +703,7 @@ ul.social li i.ist:hover{
 	-o-border-radius: 15px;
 	outline:none;
 }
-.contact_btn input[type="submit"]:hover{
+.comments_btn input[type="submit"]:hover{
 	background:#2c3e50;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -660,34 +711,34 @@ ul.social li i.ist:hover{
 	transition: all 0.3s ease;
 }
 	
-.contact-row-column .text{
+.comments-row-column .text{
 	text-align:left;
 	padding:20px 150px;
 }
-.contact-row-column .text h4{
+.comments-row-column .text h4{
 	font-size:16px;
 	font-weight: 700;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	color:#2c3e50;
 }
-.contact-row-column .text p,.contact-row-column .text small{
+.comments-row-column .text p,.comments-row-column .text small{
 	font-size:20px;
 	font-weight: 400;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	color:#2c3e50;
 }
-.contact-row-column .text p a{
+.comments-row-column .text p a{
 	text-decoration:none;
 	color:#2c3e50
 }
-.contact-row-column .text p a:hover {
+.comments-row-column .text p a:hover {
 	color: #2ecc71;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }		
-/*-- Contact Ends Here --*/
+/*-- comments Ends Here --*/
 /*-- Footer Starts Here --*/
 .footer{
 	background:#2c3e50;
@@ -700,7 +751,7 @@ ul.social li i.ist:hover{
 	color:#fff;
 	font-size:20px;
 	font-weight: 400;
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'OdinRounded', sans-serif;
 	text-decoration:none;
 }
 .footer-row-column .text1 p a:hover{
@@ -794,7 +845,7 @@ p.copyright a:hover{
 		font-size: 18px;
 		padding: 17px 0px 0px 0px;
 	}
-	.about-para h3 ,.portfolio-top h3,.team-row h3,.contact-row h3 {
+	.about-para h3 ,.portfolio-top h3,.team-row h3,.comments-row h3 {
 		font-size: 38px;
 	}
 	.about-para p {
@@ -823,7 +874,7 @@ p.copyright a:hover{
 	.about-row-column p {
 		padding: 10px 100px;
 	}
-	.contact-row-column .text {
+	.comments-row-column .text {
 		padding: 20px 20px;
 	}
 	.about-row-column i.icon1 {
@@ -907,7 +958,7 @@ p.copyright a:hover{
 			display: inline-block;
 			background-size: 300%;
 	}
-	.about-para h3 ,.portfolio-top h3,.team-row h3,.contact-row h3  {
+	.about-para h3 ,.portfolio-top h3,.team-row h3,.comments-row h3  {
 		font-size: 35px;
 	}
 	.header-matter {
@@ -941,7 +992,7 @@ p.copyright a:hover{
 	#filters li span {
 		font-size: 20px;
 	}
-	.about-para h3 ,.portfolio-top h3,.team-row h3,.contact-row h3  {
+	.about-para h3 ,.portfolio-top h3,.team-row h3,.comments-row h3  {
 		font-size: 31px;
 	}
 	.header-matter {
@@ -970,7 +1021,7 @@ p.copyright a:hover{
 	.nav {
 		right: 10px
 	}
-	.contact-row p {
+	.comments-row p {
 		font-size: 20px;
 	}
 	
@@ -1016,7 +1067,7 @@ p.copyright a:hover{
 	.nav {
 		right: 10px
 	}
-	.contact-row p {
+	.comments-row p {
 		font-size: 20px;
 	}
 	.team-row-column {
@@ -1050,14 +1101,14 @@ p.copyright a:hover{
 	.ourteam {
 		padding: 0px 0px;
 	}
-	.contact-row h3 {
+	.comments-row h3 {
 		font-size: 32px;
 		padding: 0px 0px;
 	}
 	div#portfoliolist {
 		padding: 10px 0px;
 	}
-	.contact-row-column input[type="text"] {
+	.comments-row-column input[type="text"] {
 		font-size: 18px;
 	}
 	.text2 textarea {
@@ -1133,9 +1184,48 @@ video {
     left: 0;
 }
 
+.download_font{
+	font-family: OdinRounded;
+	color: white;
+	font-size: 18px;
+
+}
+
+.copyright_font{
+	font-family: OdinRounded;
+	color: white;
+}
+
+.about_font{
+	font-family: OdinRounded;
+	color: white;
+	font-size: 18px;
+}
+
+.team_font{
+	font-family: OdinRounded;
+	color: black;
+	font-size: 14px;
+}
+
+h2{
+    font-family: OdinRounded;
+	color: black;
+	font-size: 30px;
+}
+
+h3
+{
+	font-family: OdinRounded;
+	color: black;
+	font-size: 26px;
+}
+
 html, body {
     height: 100%;
 }
+
+
 
 
 /*--- Media Queries Ends Here---*/

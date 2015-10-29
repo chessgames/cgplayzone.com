@@ -29,8 +29,8 @@
 			
 				// MixItUp plugin
 				// http://mixitup.io
-				$('#portfoliolist').mixitup({
-					targetSelector: '.portfolio',
+				$('#teamlist').mixitup({
+					targetSelector: '.team',
 					filterSelector: '.filter',
 					effects: ['fade'],
 					easing: 'snap',
@@ -43,7 +43,7 @@
 			hoverEffect: function () {
 			
 				// Simple parallax effect
-				$('#portfoliolist .portfolio').hover(
+				$('#teamlist .team').hover(
 					function () {
 						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
 						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
@@ -98,13 +98,11 @@
 				</div>
 		</div>
 	</div>
-	<!-- Header part Ends Here -->
-	<!-- About Us Starts Here -->
 	<div class="about" id="about">
 		<div class="container">
 			<div class="about-para">
 				<h3>About</h3>
-			<ul>
+			<ul class="about_font">
 				<li> Android and iOS app for eighth largest chess website in the world (according to Alexa), chessgames.com. </li>
 				<li> Allows anyone to play chess against anyone in the world. </li>
 				<li> Written entirely from scratch using C++. </li>
@@ -124,68 +122,72 @@
 			</div>
 		</div>
 	</div>
-	<!-- About Us Ends Here -->
-	<!-- Portfolio Starts Here -->
-	<div class="portfolio" id="portfolio">
+	<div class="team" id="team">
 		<div class="container">
-			<div class="portfolio-top">
-				<h3>Team</h3>
-				<h2>Founders</h2>
+			<div class="team-top">
+				<h2>Team</h2>
+				<h3>Founders</h3>
                         <hr />
 
 			<div class="row">
-				<div class="col-xs-4">
-					<a href="http://stubtaylor.com/src/html/portfolio.html"><img class="img-circle" src="img/stu.png" style="width: 150px; height: 150px;" alt="Stu" /></a>
+				<div class="col-xs-12">
+					<a href="http://stubtaylor.com/src/html/team.html"><img class="img-circle" src="img/stu.png" style="width: 150px; height: 150px;" alt="Stu" /></a>
 				</div>
 
-				<div class="col-xs-8">
-                                        <div class="row">
-                                        <div class="col-xs-4">
+			</div>
+            
+            <div class="row">
+
+				<div class="col-xs-4">
 					<h2>Stu</h2>
-                                        </div>
-                                        <div class="col-xs-4" style="margin-top: 30px">
-                                        <a href="https://www.github.com/stewarttaylor"><img style="width: 25px; height: 25px;" src="img/github_logo.png" alt="GitHub Link" /></a>
-                                        </div>
-                                        <div class="col-xs-4" style="margin-top: 30px;">
-                                        <a href="mailto:stewart.taylor@oit.edu">stewart.taylor@oit.edu</a>
-                                        </div>
-                                        </div>
-					<p>Playzone Co-founder and Lead Network Engineer.</p>
-					<ul>
-						<li><p>Designed network topology and implemented server for app.</p></li>
-						<li><p>Wrote client to interface with server using the TCP/IP protocol.</p></li>
-						<li><p>Implemented game history, algebraic notation and other small modules.</p></li>
-						<li><p>Acted as product manager, often funding necessities for project (i.e. artwork, development, licenses, miscellaneous, etc.)</p></li>
-					</ul>
-				</div>
+                </div>
+
+                <div class="col-xs-4" style="margin-top: 30px">
+                    <a href="https://www.github.com/stewarttaylor"><img style="width: 25px; height: 25px;" src="img/github_logo.png" alt="GitHub Link" /></a>
+                </div>
+
+                <div class="col-xs-4" style="margin-top: 30px;">
+                	<a class="team_font" href="mailto:stewart.taylor@oit.edu">stewart.taylor@oit.edu</a>
+                </div>
+
+            </div>
+
+					<p class="team_font">Playzone Co-founder and Lead Network Engineer.</p>
+					
+						<p class="team_font">Designed network topology and implemented server for app.</p>
+						<p class="team_font">Wrote client to interface with server using the TCP/IP protocol.</p>
+						<p class="team_font">Implemented game history, algebraic notation and other small modules.</p>
+						<p class="team_font">Acted as product manager, often funding necessities for project (i.e. artwork, development, licenses, miscellaneous, etc.)</p>
+				<!--</div>-->
 			</div>
 
 			<div class="row">
-				<div class="col-xs-4">
+				<div class="col-xs-12">
 					<img class="img-circle" src="img/jacob.png" style="width: 150px; height: 150px;" alt="Jacob" />
 				</div>
-
-				<div class="col-xs-8">
-                                        <div class="row">
-                                        <div class="col-xs-4">
-					<h2>Jacob</h2>
-                                        </div>
-                                        <div class="col-xs-4" style="margin-top: 30px">
-                                        <a href="https://www.github.com/jacobneal"><img style="width: 25px; height: 25px;" src="img/github_logo.png" alt="GitHub Link" /></a>
-                                        </div>
-                                        <div class="col-xs-4" style="margin-top: 30px;">
-                                        <a href="mailto:jacob.neal@oit.edu">jacob.neal@oit.edu</a>
-                                        </div>
-                                        </div>
-					<p>Playzone Co-founder and Lead GUI Engineer.</p>
-					<ul>
-						<li><p>Designed scalable interface for the application.</p></li>
-						<li><p>Created a dynamically rescalable board and pieceset.</p></li>
-						<li><p>Developed movement system for pieces with a zoom on movement feature.</p></li>
-						<li><p>Wrote customization tools for settings such as a background color slider.</p></li>
-					</ul>
-				</div>
 			</div>
+            
+            <div class="row">
+                <div class="col-xs-4">
+					<h2>Jacob</h2>
+                </div>
+                
+                <div class="col-xs-4" style="margin-top: 30px">
+                    <a class="team_font" href="https://www.github.com/jacobneal"><img style="width: 25px; height: 25px;" src="img/github_logo.png" alt="GitHub Link" /></a>
+                </div>
+                
+                <div class="col-xs-4" style="margin-top: 30px;">
+                    <a class="team_font" href="mailto:jacob.neal@oit.edu">jacob.neal@oit.edu</a>
+                </div>
+                                        
+            </div>
+					<p class="team_font">Playzone Co-founder and Lead GUI Engineer.</p>
+						<p class="team_font">Designed scalable interface for the application.</p>
+						<p class="team_font">Created a dynamically rescalable board and pieceset.</p>
+						<p class="team_font">Developed movement system for pieces with a zoom on movement feature.</p>
+						<p class="team_font">Wrote customization tools for settings such as a background color slider.</p>
+				</div>
+			
 
 			<div class="row">
 				<div class="col-xs-4">
@@ -201,16 +203,14 @@
                                         <a href="https://www.github.com/lewissanchez"><img style="width: 25px; height: 25px;" src="img/github_logo.png" alt="GitHub Link" /></a>
                                         </div>
                                         <div class="col-xs-4" style="margin-top: 30px;">
-                                        <a href="mailto:lewis.sanchez@oit.edu">lewis.sanchez@oit.edu</a>
+                                        <a class="team_font" href="mailto:lewis.sanchez@oit.edu">lewis.sanchez@oit.edu</a>
                                         </div>
                                         </div>
-					<p>Playzone Co-founder and Database Administrator.</p>
-					<ul>
-						<li><p>Designed and implemented encryption framework using SHA256.</p></li>
-						<li><p>Wrote database scripts and queries and developed an ER diagram.</p></li>
-						<li><p>Responsible for implementation of loading and settings pages.</p></li>
-						<li><p>Translated all text in application into Spanish.</p></li>
-					</ul>
+					<p class="team_font">Playzone Co-founder and Database Administrator.</p>
+						<p class="team_font">Designed and implemented encryption framework using SHA256.</p>
+						<p class="team_font">Wrote database scripts and queries and developed an ER diagram.</p>
+						<p class="team_font">Responsible for implementation of loading and settings pages.</p>
+						<p class="team_font">Translated all text in application into Spanish.</p>
 				</div>
 			</div>
 
@@ -228,27 +228,25 @@
                                         <a href="https://www.github.com/aaroncostner"><img style="width: 25px; height: 25px;" src="img/github_logo.png" alt="GitHub Link" /></a>
                                         </div>
                                         <div class="col-xs-4" style="margin-top: 30px;">
-                                        <a href="mailto:aaron.costner@oit.edu">aaron.costner@oit.edu</a>
+                                        <a class="team_font" href="mailto:aaron.costner@oit.edu">aaron.costner@oit.edu</a>
                                         </div>
                                         </div>
-					<p>Playzone Co-founder and Lead Validation Engineer.</p>
-					<ul>
-						<li><p>Used regular expressions for login and registration validation.</p></li>
-						<li><p>Wrote validations to define movements for all chess pieces.</p></li>
-						<li><p>Developed a system to return a vector to define all possible movements.</p></li>
-						<li><p>Responsible for the behavior of the game.</p></li>
-					</ul>
+					<p class="team_font">Playzone Co-founder and Lead Validation Engineer.</p>
+						<p class="team_font">Used regular expressions for login and registration validation.</p>
+						<p class="team_font">Wrote validations to define movements for all chess pieces.</p>
+						<p class="team_font">Developed a system to return a vector to define all possible movements.</p>
+						<p class="team_font">Responsible for the behavior of the game.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Portfolio Ends Here -->
+	<!-- team Ends Here -->
 	<!-- Our Team Starts Here -->
-	<div class="ourteam" id="team">
+	<div class="download" id="download">
 		<div class="container">
-			<dic class="row team-row">
-			<h1> Download</h1>
-			<p>Choose your platform (i.e. Windows or Mac)</p>
+			<dic class="download download-row">
+			<h2> Download</h2>
+			<p class="download_font">Choose your platform (i.e. Windows or Mac)</p>
 			
 			<div class="row">
 				<div class="col-xs-6">
@@ -263,9 +261,9 @@
 	</div>
 	<!-- Our Team Ends Here -->
 	<!-- Contact Starts Here -->
-	<div class="cobntact" id="contact">
+	<div class="comments" id="comments">
 		<div class="container">
-			<div class="row contact-row">
+			<div class="row comments-row">
 				<h3>Comments</h3>
 				<p>Please leave questions, comments, concerns or suggestions about playzone below!</p>
 			
@@ -288,7 +286,7 @@
 				</div>
 				<div class="col-md-4 footer-row-column">
 					<div class="text1">
-						<p><a href="#">chess@chessgames.com</a> </p>
+						<p class="copyright_font"><a href="#">chess@chessgames.com</a> </p>
 						<small>+1 954-494-3638</small>
 						</div>
 				</div>
@@ -301,7 +299,7 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
-			<p class="copyright">2001-2015 &copy; <a href="http://chessgames.com/">Chessgames.com</a></p>
+			<p class="copyright_font">2001-2015 &copy; <a href="http://chessgames.com/">Chessgames.com</a></p>
 			<script type="text/javascript">
 						$(document).ready(function() {
 							/*
