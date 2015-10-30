@@ -13,7 +13,7 @@ body{
 
 @font-face{
 	font-family:'OdinRounded';
-	src:url('../fonts/Frank Hemmekam - Odin Rounded/Packages/Odin Rounded/Regular/OdinRounded.otf') format('opentype');
+	src:url('../fonts/OdinRounded.otf') format('opentype');
 }
 .logo{
 	float:left;
