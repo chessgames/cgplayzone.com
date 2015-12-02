@@ -1,11 +1,15 @@
 body{
 	font-family: 'Droid Serif', serif;
+	margin: 0px;
 }
 @font-face{
 	font-family:'OdinRounded';
 	src:url('../fonts/OdinRounded.otf') format('opentype');
 }
 /*--Header Starts Here-- */
+.container-fluid{
+	margin: 0px;
+}
 .header{
 	background-color:#FF5E00;
 	background-size:cover;
@@ -14,6 +18,7 @@ body{
 	-o-background-size:cover;
 	padding:40px 0px 100px 0px;
 	height: 600px;
+	margin: 0px;
 }
 .logo{
 	float:left;
@@ -46,7 +51,7 @@ nav ul li a:hover, nav li.active a{
 
 /*ABOUT STYLES*/
 .about{
-	
+	margin: 0px;
 	background-color:#34495e;
 	color:#FFFFFF;
 	font-family:'OdinRounded',sans-serif;
@@ -58,6 +63,7 @@ nav ul li a:hover, nav li.active a{
 	font-weight:bold;
 }
 .about-body{
+	margin: 0px;
 
 }
 @media(max-width: 768px){
@@ -76,4 +82,8 @@ nav ul li a:hover, nav li.active a{
 	.navlist{
 		display: inline;
 	}
+}
+.video{
+	float: center;
+	margin-top: 25px;
 }
