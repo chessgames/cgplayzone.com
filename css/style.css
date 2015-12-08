@@ -22,6 +22,8 @@ body{
 }
 .logo{
 	float:left;
+	height: 65%;
+	width: 25%;
 }
 /*NAV STYLES*/
 
@@ -56,6 +58,7 @@ nav ul li a:hover, nav li.active a{
 	color:#FFFFFF;
 	font-family:'OdinRounded',sans-serif;
 	font-size:18px;
+	
 }
 .about-title{
 	text-align:center;
@@ -63,8 +66,7 @@ nav ul li a:hover, nav li.active a{
 	font-weight:bold;
 }
 .about-body{
-	margin: 0px;
-
+	text-align: left;
 }
 @media(max-width: 768px){
 	.collapse{
@@ -86,4 +88,20 @@ nav ul li a:hover, nav li.active a{
 .video{
 	float: center;
 	margin-top: 25px;
+	padding-bottom: 25px;
+}
+/*FOUNDERS STYLES*/
+.founders{
+	text-align: center;
+}
+.aFounder{
+	float:center;
+}
+.founders img{
+	background:#ffffff;
+	border-radius:130px;
+	-webkit-border-radius: 130px;
+	-moz-border-radius:130px;
+	-o-border-radius: 130pxx;
+	padding:5px 0px;
 }
