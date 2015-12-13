@@ -21,6 +21,7 @@ body{
 .logo{
 	float:left;
 	padding:0px;
+	padding-top: 15px;
 }
 /*NAV STYLES*/
 
@@ -50,6 +51,7 @@ nav ul li a:hover, nav li.active a{
 nav{
 	text-align: right;
 	padding-right:0px;
+	padding-top: 15px;
 }
 
 /*I know this is ugly but it's fucking with columns
@@ -129,6 +131,13 @@ nav{
 .founders ul{
 	style: none;
 	text-align: left;
+}
+.name{
+	color:#000000;
+	font-size:2.5em;
+}
+.email{
+	font-size: 1.5em;
 }
 
 /*DOWNLOAD STYLES*/
