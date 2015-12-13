@@ -12,18 +12,15 @@ body{
 }
 .header{
 	background-color:#FF5E00;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	padding:40px 0px 100px 0px;
-	height: 600px;
 	margin: 0px;
+} 
+.imgPlaceHolder{
+	height:400px;
+	background-color:#FF5E00;
 }
 .logo{
 	float:left;
-	height: 65%;
-	width: 25%;
+	padding:0px;
 }
 /*NAV STYLES*/
 
@@ -35,7 +32,7 @@ nav ul{
 }
 nav ul li{
 	display:inline;
-	margin:15px;
+	margin-left:30px;
 }
 nav ul li a{
 	color:#FFFFFF;
@@ -49,6 +46,21 @@ nav ul li a{
 }
 nav ul li a:hover, nav li.active a{
 		color:#2ecc71;
+}
+nav{
+	text-align: right;
+	padding-right:0px;
+}
+
+/*I know this is ugly but it's fucking with columns
+  and I don't know how else to fix it...*/
+  
+.first{
+	margin-left:0px;
+}
+.last{
+	margin-right: 15px;
+	
 }
 
 /*ABOUT STYLES*/
@@ -71,6 +83,9 @@ nav ul li a:hover, nav li.active a{
 @media(max-width: 768px){
 	.collapse{
 		display: block;
+		text-align: right;
+		margin: 0px;
+		
 	}
 	.navlist{
 		display: none;
@@ -79,7 +94,6 @@ nav ul li a:hover, nav li.active a{
 @media(min-width: 768px){
 	.collapse{
 		display: none;
-		float: right;
 	}
 	.navlist{
 		display: inline;
@@ -93,15 +107,54 @@ nav ul li a:hover, nav li.active a{
 /*FOUNDERS STYLES*/
 .founders{
 	text-align: center;
+	font-family: OdinRounded;
+}
+.founders ul{
+	font-size: 18px;
 }
 .aFounder{
 	float:center;
 }
-.founders img{
+.profile_picture img{
 	background:#ffffff;
 	border-radius:130px;
 	-webkit-border-radius: 130px;
 	-moz-border-radius:130px;
 	-o-border-radius: 130pxx;
 	padding:5px 0px;
+	height: 150px;
+	width:150px;	
+}
+
+.founders ul{
+	style: none;
+	text-align: left;
+}
+
+/*DOWNLOAD STYLES*/
+.download{
+	background-color:#663333;
+}
+.download h2, h4{
+	padding-top: 15px;
+	font-family:OdinRounded;
+	color:white;
+
+	text-align: center;
+}
+.download img{
+	height: 10em;
+	width:10em;
+}
+
+@media(min-width: 768px){
+.download img{
+	height: 200px;
+	width: 200px;
+	}
+}
+
+
+.apple, .windows{
+	text-align: center;
 }

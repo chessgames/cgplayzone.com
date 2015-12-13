@@ -21,18 +21,20 @@
 	</script>
 </head>
 
-<div class = "container-fluid">
+<body>
 	<div class = "row header">
-		<div class = "logo col-lg-4 col-md-4 col-sm-5 col-xs-10"><img src = "img/logo.png" height="50%" width = "50%"/></div>
-		<nav class = "col-lg-8 col-md-8 col-sm-7 col-xs-2">
-			<a class="collapse" href="#"><img src="img/nav_icon.png" alt="Nav Icon"/></a>
+		<div class = "logo col-lg-3 col-md-4 col-sm-5 col-xs-6"><img src = "img/logo.png" height="50%" width = "50%"/></div>
+		<nav class = "col-lg-9 col-md-8 col-sm-7 col-xs-6">
+			<a class="collapse" href="#"><img class=".img_responsive" src="img/nav_icon.png" alt="Nav Icon"/></a>
 			<ul class="navlist">
-				<li><a href="#about" class="scroll">About</a></li>
+				<li><a href="#about" class="scroll first">About</a></li>
 				<li><a href="#team" class="scroll">Team</a></li>
 				<li><a href="#download" class="scroll">Download</a></li>
-				<li><a href="#comments" class="scroll">Comments</a></li>								
+				<li><a href="#comments" class="scroll last">Comments</a></li>								
 			</ul>
 		</nav>
+	</div>
+	<div class="row imgPlaceHolder">
 	</div>
 	<div class="about">
 		<div class="row">
@@ -62,21 +64,95 @@
 	<div class="founders">
 		<h3 class="founders-title">Founders</h3>
 		<div class="aFounder">
-			<div class="profile_picture"><a href="http://stubtaylor.com/"><img src="img/stu.png"/></a></div>
-			<div class="name">Stu a.k.a. "Studebaker"</div>
-			<div class="email">stewart.taylor@oit.edu</div>
-			<div class="github"><a target="_blank" href="https://github.com/stewarttaylor"><img src="img/github_logo.png" height=20px width=20px></a></div>
-			<div class="description">
-				<ul>
-					<li class="team_font">Playzone Co-founder and Lead GUI Engineer.</li>
-					<li class="team_font">Designed scalable interface for the application.</li>
-					<li class="team_font">Created a dynamically rescalable board and pieceset.</li>
-					<li class="team_font">Developed movement system for pieces with a zoom on movement feature.</li>
-					<li class="team_font">Wrote customization tools for settings such as a background color slider.</li>
-				</ul>	
+			<div class="profile_picture row"><a href="http://stubtaylor.com/"><img src="img/stu.png"/></a></div>
+			<div class="name row">Stu a.k.a. "Studebaker"</div>
+			<div class="email row"><a class="team_font" href="mailto:stewart.taylor@oit.edu">stewart.taylor@oit.edu</a></div>
+			<div class="github row" width=50px height=50px><a target="_blank" href="https://github.com/stewarttaylor"><img src="img/github_logo.png" height=20px width=20px></a></div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+				<div class="description col-lg-5 col-md-5 col-sm-12 col-xs-12">
+					<ul>
+						<li class="team_font">Playzone Co-founder and Lead Network Engineer.</li>
+						<li class="team_font">Designed network topology and implemented server for app.</li>
+						<li class="team_font">Wrote client to interface with server using the TCP/IP protocol.</li>
+						<li class="team_font">Implemented game history, algebraic notation and other small modules.</li>
+						<li class="team_font">Acted as product manager, often funding necessities for project (i.e. artwork, development, licenses, miscellaneous, etc.)</li>
+					</ul>	
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
+			</div>
+		</div>
+		<div class="aFounder">
+			<div class="profile_picture row"><img src="img/jacob.png" alt="jacob"/></div>
+			<div class="name row">Jacob</div>
+			<div class="email row"><a class="team_font" href="mailto:jacob.neal@oit.edu">jacob.neal@oit.edu</div>
+			<div class="github row" width=50px height=50px><a target="_blank" href="https://github.com/jacobneal"><img src="img/github_logo.png" height=20px width=20px></a></div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+				<div class="description col-lg-5 col-md-5 col-sm-12 col-xs-12">
+					<ul>
+						<li class="team_font">Playzone Co-founder and Lead GUI Engineer.</li>
+						<li class="team_font">Designed scalable interface for the application.</li>
+						<li class="team_font">Created a dynamically rescalable board and pieceset.</li>
+						<li class="team_font">Developed movement system for pieces with a zoom on movement feature.</li>
+						<li class="team_font">Wrote customization tools for settings such as a background color slider.</li>
+					</ul>	
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
+			</div>
+		</div>
+		<div class="aFounder">
+			<div class="profile_picture row"><img src="img/lou.jpg"/></div>
+			<div class="name row">Lewis</div>
+			<div class="email row"><a class="team_font" href="mailto:lewis.sanchez@oit.edu">lewis.sanchez@oit.edu</a></div>
+			<div class="github row" width=50px height=50px><a target="_blank" href="https://github.com/lewissanchez"><img src="img/github_logo.png" height=20px width=20px></a></div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+				<div class="description col-lg-5 col-md-5 col-sm-12 col-xs-12">
+					<ul>
+						<li class="team_font">Playzone Co-founder and Database Administrator</li>
+						<li class="team_font">Designed and implemented encryption framework using SHA256.</li>
+						<li class="team_font">Wrote database scripts and queries and developed an ER diagram.</li>
+						<li class="team_font">Responsible for implementation of loading and settings pages.</li>
+						<li class="team_font">Translated all text in application into Spanish.</li>
+					</ul>	
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
+			</div>
+		</div>
+		<div class="aFounder">
+			<div class="profile_picture row"><img src="img/aaron.jpg"/></div>
+			<div class="name row">Aaron</div>
+			<div class="email row"><a href="mailto:aaron.costner@oit.edu">aaron.costner@oit.edu</a></div>
+			<div class="github row" width=50px height=50px><a target="_blank" href="https://github.com/aaroncostner"><img src="img/github_logo.png" height=20px width=20px></a></div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
+				<div class="description col-lg-5 col-md-5 col-sm-12 col-xs-12">
+					<ul>
+						<li class="team_font">Playzone Co-founder and Lead Validation Engineer.</li>
+						<li class="team_font">Used regular expressions for login and registration validation.</li>
+						<li class="team_font">Wrote validations to define movements for all chess pieces.</li>
+						<li class="team_font">Developed a system to return a vector to define all possible movements.</li>
+						<li class="team_font">Responsible for the behavior of the game.</li>
+					</ul>	
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
+			</div>
+		</div>
+	</div>	
+	
+	</div>
+	<div class="download">
+		<h2>Download</h2>
+		<h4>Choose your platform (i.e. Windows or Mac)</h4>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-md-6 col-xs-6 windows">
+				<a href="bin/ChessgamesInstaller.exe"><img src="img/windows_icon.png" alt="Windows Logo"/></a>
+			</div>
+			<div class="col-lg-6 col-md-6 col-md-6 col-xs-6 apple">
+				<a href="bin/Chessgames.app.zip"><img src="img/apple_icon.png" alt="Apple Logo"/></a>
 			</div>
 		</div>	
 	</div>
 	
-
-</div>
+</body>
