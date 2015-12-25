@@ -15,6 +15,7 @@ body{
 	margin: 0px;
 } 
 .imgPlaceHolder{
+	margin: 0px;
 	height:400px;
 	background-color:#FF5E00;
 }
@@ -137,12 +138,13 @@ nav{
 	font-size:2.5em;
 }
 .email{
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 /*DOWNLOAD STYLES*/
 .download{
 	background-color:#663333;
+	padding-bottom: 100px;
 }
 .download h2, h4{
 	padding-top: 15px;
@@ -151,15 +153,16 @@ nav{
 
 	text-align: center;
 }
+
 .download img{
-	height: 10em;
-	width:10em;
+	height: 5em;
+	width:5em;
 }
 
 @media(min-width: 768px){
 .download img{
-	height: 200px;
-	width: 200px;
+	height: 15em;
+	width: 15em;
 	}
 }
 
@@ -167,3 +170,76 @@ nav{
 .apple, .windows{
 	text-align: center;
 }
+
+.footer{
+	margin: 0px;
+	background-color: #2C3E50;
+	padding-top: 20px;	
+}
+.footer img{
+	text-align: left;
+	padding-left: 15px;
+	height: 15em;
+}
+.row-eq-height{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mail h4{
+	text-align: left;
+	padding-left: 15px;
+}
+
+.mail small, a{
+	text-align: left;
+	padding-left: 15px;
+	color: #FFF;
+}
+.smallish{
+	margin: 0px;
+	background-color: #2C3E50;
+	padding-top: 20px;	
+	text-align: center;
+}
+
+
+
+ul.social li{
+	display:inline-block;
+	margin:0px 20px 0px 0px;
+	
+}
+ul.social li i{
+	background:url(../img/img-sprite.png);
+	width:64px;
+	height:64px;
+	display:block;
+	cursor:pointer;
+}
+ul.social li i:hover{
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+ul.social li i.fa{
+	background-position:-7px 0px;
+}
+ul.social li i.fa:hover{
+	background-position:-7px -65px;
+}
+ul.social li i.tw{
+	background-position:-68px 0px;
+}
+ul.social li i.tw:hover{
+	background-position:-68px -65px;
+}
+ul.social li i.ist{
+	background-position:-132px 0px;
+}
+ul.social li i.ist:hover{
+	background-position:-132px -65px;
+}
+

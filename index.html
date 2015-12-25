@@ -4,6 +4,7 @@
 <title>Chessgames | Playzone</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/comments.css" rel='stylesheet' type='text/css'/>
 <link href="css/gallery.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
@@ -25,7 +26,7 @@
 	<div class = "row header">
 		<div class = "logo col-lg-3 col-md-4 col-sm-5 col-xs-6"><img src = "img/logo.png" height="50%" width = "50%"/></div>
 		<nav class = "col-lg-9 col-md-8 col-sm-7 col-xs-6">
-			<a class="collapse" href="#"><img class=".img_responsive" src="img/nav_icon.png" alt="Nav Icon"/></a>
+			<a class="collapse" href="#"><img class="img_responsive" src="img/nav_icon.png" alt="Nav Icon"/></a>
 			<ul class="navlist">
 				<li><a href="#about" class="scroll first">About</a></li>
 				<li><a href="#team" class="scroll">Team</a></li>
@@ -37,7 +38,7 @@
 	<div class="row imgPlaceHolder">
 	</div>
 	<div class="about">
-		<div class="row">
+		<div class="row" id="about">
 			<h3 class="about-title">About</h3>
 		</div>
 		<div class="row">
@@ -62,7 +63,7 @@
 		</div>
 	</div>
 	<div class="founders">
-		<h3 class="founders-title">Founders</h3>
+		<h3 class="founders-title" id="team">Founders</h3>
 		<div class="aFounder">
 			<div class="profile_picture row"><a href="http://stubtaylor.com/"><img src="img/stu.png"/></a></div>
 			<h2 class="name row">Stu</h2>
@@ -142,17 +143,50 @@
 	</div>	
 	
 	</div>
-	<div class="download">
+	<div class="download" id="download">
 		<h2>Download</h2>
 		<h4>Choose your platform (i.e. Windows or Mac)</h4>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-md-6 col-xs-6 windows">
-				<a href="bin/ChessgamesInstaller.exe"><img src="img/windows_icon.png" alt="Windows Logo"/></a>
+				<a href="bin/ChessgamesInstaller.exe"><img class="img_responsive" src="img/windows_icon.png" alt="Windows Logo"/></a>
 			</div>
 			<div class="col-lg-6 col-md-6 col-md-6 col-xs-6 apple">
-				<a href="bin/Chessgames.app.zip"><img src="img/apple_icon.png" alt="Apple Logo"/></a>
+				<a href="bin/Chessgames.app.zip"><img class="img_responsive" src="img/apple_icon.png" alt="Apple Logo"/></a>
 			</div>
 		</div>	
+	</div>	
+	<div class="footer row-eq-height row hidden-sm hidden-xs">
+		<div class="mail col-lg-4 col-md-4 col-sm-0 col-xs-0">
+			<img class="img_responsive" src="img/logo.png" alt="chessgames logo"/>
+			<h4>Chessgames Services LLC</h4>
+			<h4>P.O. Box 111015</h4>
+			<h4>Naples, FL 34108</h4>
+			<small>2001-2015 &copy; <a href="http://chessgames.com/">Chessgames.com</a></small>
+		</div>
+		<div class="contact col-lg-6 col-md-6 hidden-sm hidden-xs">
+			<h4 class="chess_email"><a href="mailto:chess@chessgames.com">chess@chessgames.com</a></h4>
+			<h4 class="chess_number">+1 954-494-3638</h2>
+		</div>
+		<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+			<ul class="social">
+				<a href="https://www.facebook.com/chessgamescom"><li><i class="fa"></i></li></a>
+				<a href="https://twitter.com/chessgamescom"><li><i class="tw"></i></li></a>
+				<a href="https://github.com/chessgames"><li><i class="ist"></i></li></a>
+			</ul>
+		</div>	
 	</div>
-	
+	<div class="smallish row hidden-lg hidden-md col-sm-12 col-xs-12">
+		<img class="img_responsive" src="img/logo.png" alt="chessgames logo"/>
+			<h4>Chessgames Services LLC</h4>
+			<h4>P.O. Box 111015</h4>
+			<h4>Naples, FL 34108</h4>
+			<h4 class="chess_email"><a href="mailto:chess@chessgames.com">chess@chessgames.com</a></h4>
+			<h4 class="chess_number">+1 954-494-3638</h2>
+			<small>2001-2015 &copy; <a href="http://chessgames.com/">Chessgames.com</a></small>
+			<ul class="social .img_responsive">
+				<a href="https://www.facebook.com/chessgamescom"><li><i class="fa"></i></li></a>
+				<a href="https://twitter.com/chessgamescom"><li><i class="tw"></i></li></a>
+				<a href="https://github.com/chessgames"><li><i class="ist"></i></li></a>
+			</ul>
+	</div>
 </body>
