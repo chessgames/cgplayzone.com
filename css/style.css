@@ -48,15 +48,13 @@ nav ul li a{
 }
 nav ul li a:hover, nav li.active a{
 		color:#2ecc71;
+		text-decoration: none;
 }
 nav{
 	text-align: right;
 	padding-right:0px;
 	padding-top: 15px;
 }
-
-/*I know this is ugly but it's fucking with columns
-  and I don't know how else to fix it...*/
   
 .first{
 	margin-left:0px;
@@ -130,7 +128,7 @@ nav{
 }
 
 .founders ul{
-	style: none;
+	text-decoration: none;
 	text-align: left;
 }
 .name{
@@ -139,6 +137,16 @@ nav{
 }
 .email{
 	font-size: 1.2em;
+}
+.email a{
+	color: #000000;
+}
+
+.email a:hover{
+	text-decoration: none;
+}
+.github{
+	padding-top: 1em;
 }
 
 /*DOWNLOAD STYLES*/
@@ -241,5 +249,19 @@ ul.social li i.ist{
 }
 ul.social li i.ist:hover{
 	background-position:-132px -65px;
+}
+
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+	border: none;
+	text-indent: 100%;
+	background: url(../img/top_move.png) no-repeat 0px 0px;
 }
 
