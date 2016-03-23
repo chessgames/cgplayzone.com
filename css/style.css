@@ -55,9 +55,6 @@ nav{
 	padding-top: 15px;
 }
 
-/*I know this is ugly but it's fucking with columns
-  and I don't know how else to fix it...*/
-  
 .first{
 	margin-left:0px;
 }
@@ -139,6 +136,16 @@ nav{
 }
 .email{
 	font-size: 1.2em;
+	color: #000;
+}
+
+.github img{
+	height: 2.5em;
+	width: 2.5em;
+}
+
+.team_font{
+	color: #000;
 }
 
 /*DOWNLOAD STYLES*/
@@ -181,6 +188,33 @@ nav{
 	padding-left: 15px;
 	height: 15em;
 }
+table{
+	width: 100%;
+	table-layout: fixed;
+	border: 1px;
+	border-color: white;
+}
+.footer table tr td{
+	padding-top: 0;
+	padding-bottom: 0;
+	
+}
+
+/* .footer td
+{
+	text-align: left;
+	background-color: #000;
+	border: 2px solid white;
+} */
+.footer .left{
+	text-align: left;
+	padding-left: 3em;
+}
+
+.footer .right{
+	text-align: right;
+}
+
 .row-eq-height{
   display: -webkit-box;
   display: -webkit-flex;
@@ -195,16 +229,16 @@ nav{
 .mail small, a{
 	text-align: left;
 	padding-left: 15px;
-	color: #FFF;
+	color: #fff;
 }
+
+
 .smallish{
 	margin: 0px;
 	background-color: #2C3E50;
 	padding-top: 20px;	
 	text-align: center;
 }
-
-
 
 ul.social li{
 	display:inline-block;
