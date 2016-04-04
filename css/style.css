@@ -26,19 +26,20 @@ body{
 }
 /*NAV STYLES*/
 
-nav ul{
-	float: right;
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
+.menu{
+	 float:right;
+	 margin-top:10px;
 }
-nav ul li{
-	display:inline;
-	margin-left:30px;
+.menu li{
+	display:inline-block;
 }
-nav ul li a{
-	color:#FFFFFF;
+ .menu li:first-child{
+   	margin-left:0;
+}
+.menu li a{
+  	display: block;
 	font-size:18px;
+	color:#fff;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -46,14 +47,93 @@ nav ul li a{
 	font-weight: 400;
 	font-family: 'OdinRounded', sans-serif;
 }
-nav ul li a:hover, nav li.active a{
-		color:#2ecc71;
+#nav .current a {
+    color:#fb326f;
+   -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
-nav{
-	text-align: right;
-	padding-right:0px;
-	padding-top: 15px;
+.menu li a:hover ,.menu li.active a{
+	color:#2ecc71;
+} 
+.toggleMenu {
+	display:  none;
+   	padding:4px 5px 0px 5px;
+    border-radius:2em; 
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    -o-border-radius:2em; 
 }
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+}
+@media screen and (max-width:800px) {
+	.menu {
+		margin:10px 0;
+	}
+    .active {
+        display: block;
+    }
+    .menu li a{
+    	text-align:left;
+    	border-radius:0;
+    	-webkit-border-radius:0;
+    	-moz-border-radius:0;
+    	-o-border-radius:0;
+    }
+    .nav {
+	     list-style: none;
+	     *zoom: 1;
+	     width:95%;
+		 position: absolute;
+		 right:23px;
+		 background:#051619;
+		 top:60px;
+		 z-index: 9999;
+		 border:1px solid #eee;
+    }
+   .menu li a span.messages{
+    	text-align:center;
+    	top:15px;
+    }
+    .nav li ul{
+    	width:100%;   	
+    }
+    .menu ul{
+    	margin:43px 0px 0px 0px;
+    }
+    .nav > li.hover > ul {
+        width:100%;
+    }
+    .nav > li {
+        float: none;
+        display:block;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+    .nav li a{
+    	border-top:1px solid #eee;
+    	background:#fff;
+    	color:#384254;
+    }
+     .nav li:first-child a{
+     	border-top:none;
+     }
+ }
 
 .first{
 	margin-left:0px;
