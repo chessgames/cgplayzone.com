@@ -6,7 +6,7 @@ body{
 	font-family:'OdinRounded';
 	src:url('../fonts/OdinRounded.otf') format('opentype');
 }
-/*--Header Starts Here-- */
+/*--Header Starts Here--*/
 .container-fluid{
 	margin: 0px;
 }
@@ -258,6 +258,7 @@ body{
 	text-align: center;
 }
 
+/*--Footer Styles--*/
 .footer{
 	margin: 0px;
 	background-color: #2C3E50;
@@ -280,12 +281,6 @@ table{
 	
 }
 
-/* .footer td
-{
-	text-align: left;
-	background-color: #000;
-	border: 2px solid white;
-} */
 .footer .left{
 	text-align: left;
 	padding-left: 3em;
@@ -319,7 +314,7 @@ table{
 	padding-top: 20px;	
 	text-align: center;
 }
-
+/*--Social Token Styles--*/
 ul.social li{
 	display:inline-block;
 	margin:0px 20px 0px 0px;

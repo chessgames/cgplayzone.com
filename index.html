@@ -23,17 +23,17 @@
 </head>
 
 <body>
+<!--Header. Still needs banner image-->
 	<div class = "row header">
 		<div class = "logo col-lg-3 col-md-4 col-sm-5 col-xs-6"><img src = "img/logo.png" height="50%" width = "50%"/></div>
-		
 			<div class="menu">
 					<a class="toggleMenu" href="#"><img src="img/nav_icon.png" alt="" /> </a>
-					<ul class="nav" id="nav">
-					  <li><a href="#about" class="scroll">About</a></li>
-					  <li><a href="#team" class="scroll">Team</a></li>
-					  <li><a href="#download" class="scroll">Download</a></li>
-					  <li><a href="#comments" class="scroll">Comments</a></li>								
-					 </ul>
+						<ul class="nav" id="nav">
+							<li><a href="#about" class="scroll">About</a></li>
+							<li><a href="#team" class="scroll">Team</a></li>
+							<li><a href="#download" class="scroll">Download</a></li>
+							<li><a href="#download" class="scroll">Contact</a></li>
+						 </ul>
 					<script type="text/javascript" src="js/responsive-nav.js"></script>
 					<script type="text/javascript" src="js/move-top.js"></script>
 					<script type="text/javascript" src="js/easing.js"></script>
@@ -46,10 +46,11 @@
 					});
 					</script>
 			</div>	
-
 	</div>
+	<!--Image should be inserted here. Delete CSS otherwise the div will be way too big-->
 	<div class="row imgPlaceHolder">
 	</div>
+	<!--Contains entire about section-->
 	<div class="about">
 		<div class="row" id="about">
 			<h3 class="about-title">About</h3>
@@ -67,6 +68,7 @@
 			</ul>
 			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-0"></div>
 		</div>
+		<!--This should be a gif, but is html5 video for now-->
 		<div class="row">
 			<video class="video col-lg-12 col-md-12 col-sm-12 col-xs-12" width="700em" height="400em" autoplay muted>
 			  <source src="videos/samplevid.mp4" type="video/mp4">
@@ -75,6 +77,7 @@
 			</video>
 		</div>
 	</div>
+	<!--Founders section. Each aFounder class is an individual founder-->
 	<div class="founders">
 		<h1 class="founders-title" id="team">Founders</h1>
 		<div class="aFounder">
@@ -154,10 +157,11 @@
 			</div>
 		</div>
 		<h1>Team</h1>
+		<!-- Used same styles as founders even though this is technically a seperate section. If more "Team" members are added I would suggest making them slightly smaller, and put maybe 3 in a row.-->
 		<div class="aFounder">
 			<div class="profile_picture row"><img src="img/cris.jpg"/></div>
 			<h2 class="name row">Cris</h2>
-			<div class="email row"><a class="team_font" href="mailto:cristopher.laney@oit.edu">cristopher.laney@oit.edu</a></div>
+			<div class="email row"><a class="team_font" target="_top" href="mailto:cristopher.laney@oit.edu">cristopher.laney@oit.edu</a></div>
 			<div class="github row" ><a target="_blank" href="https://github.com/crislaney"><img src="img/github_logo.png"></a></div>
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-0 col-xs-0"></div>
@@ -174,6 +178,7 @@
 	</div>	
 	
 	</div>
+	<!--Downloads. May need to add Android at some point-->
 	<div class="download" id="download">
 		<h2>Download</h2>
 		<h4>Choose your platform (i.e. Windows or Mac)</h4>
@@ -188,7 +193,8 @@
 	</div>	
 	
 	</div>
-	<div class="footer hidden-md hidden-sm hidden-xs row">
+	<!--Footer. This table stuff is kind of crazy, but it was the only way I could get the info to sit at the bottom of the div-->
+	<div class="footer hidden-md hidden-sm hidden-xs row" id="contact">
 		<table>
 			<tr ><td><img class="img_responsive" src="img/logo.png" alt="chessgames logo"/></td></tr>
 			<tr ><td><h4 class="left">Chessgames Services LLC</h4></td></tr>
@@ -198,30 +204,31 @@
 				<td><h4 class="left">+1 954-494-3638</h4></td>
 			</tr>
 			<tr >
-				<td><h4 class="left">2001-2015 &copy; <a href="http://chessgames.com/">Chessgames.com</a></h4></td>
-				<td><h4 class="left">chess@chessgames.com</h4></td>
+				<td><h4 class="left">2001-2015 &copy; <a target="_blank" href="http://chessgames.com/">Chessgames.com</a></h4></td>
+				<td><h4 class="left" target="_top" href="mailto:chess@chessgames.com">chess@chessgames.com</h4></td>
 				<td>
 					<ul class="social .img_responsive right">
-						<a href="https://www.facebook.com/chessgamescom"><li><i class="fa"></i></li></a>
-						<a href="https://twitter.com/chessgamescom"><li><i class="tw"></i></li></a>
-						<a href="https://github.com/chessgames"><li><i class="ist"></i></li></a>
+						<a target="_blank" href="https://www.facebook.com/chessgamescom"><li><i class="fa"></i></li></a>
+						<a target="_blank" href="https://twitter.com/chessgamescom"><li><i class="tw"></i></li></a>
+						<a target="_blank" href="https://github.com/chessgames"><li><i class="ist"></i></li></a>
 					</ul>
 				</td>
 			</tr>
 		</table>
 	</div>
-	<div class="smallish row hidden-lg col-sm-12 col-xs-12">
+	<!--Footer for smaller screen sizes-->
+	<div class="smallish row hidden-lg col-sm-12 col-xs-12" id="contact">
 		<img class="img_responsive" src="img/logo.png" alt="chessgames logo"/>
 			<h4>Chessgames Services LLC</h4>
 			<h4>P.O. Box 111015</h4>
 			<h4>Naples, FL 34108</h4>
-			<h4 class="chess_email"><a href="mailto:chess@chessgames.com">chess@chessgames.com</a></h4>
+			<h4 class="chess_email"><a target="_top" href="mailto:chess@chessgames.com">chess@chessgames.com</a></h4>
 			<h4 class="chess_number">+1 954-494-3638</h2>
-			<small>2001-2015 &copy; <a href="http://chessgames.com/">Chessgames.com</a></small>
+			<small>2001-2015 &copy; <a target="_blank" href="http://chessgames.com/">Chessgames.com</a></small>
 			<ul class="social .img_responsive">
-				<a href="https://www.facebook.com/chessgamescom"><li><i class="fa"></i></li></a>
-				<a href="https://twitter.com/chessgamescom"><li><i class="tw"></i></li></a>
-				<a href="https://github.com/chessgames"><li><i class="ist"></i></li></a>
+				<a target="_blank" href="https://www.facebook.com/chessgamescom"><li><i class="fa"></i></li></a>
+				<a target="_blank" href="https://twitter.com/chessgamescom"><li><i class="tw"></i></li></a>
+				<a target="_blank" href="https://github.com/chessgames"><li><i class="ist"></i></li></a>
 			</ul>
 	</div>
 </body>
